@@ -13,7 +13,13 @@ public class EmployeeClient {
 //        Secretaries know how to take dictation.
 //        Legal secretaries know how to prepare legal documents.
 
-        Employee e = new Employee();
+        Employee e = new Employee(6);
+        System.out.println("Employee e salary: " + e.getSalary());
+        System.out.println("Employee e vacation days: " + e.getVacationDays());
+
+        Lawyer l = new Lawyer(8);
+        System.out.println("Lawyer l salary: " + l.getSalary());
+        System.out.println("Lawyer l vacation days: " + l.getVacationDays());
 
         // do stuff using the Employee (and child classes) here...
     }
