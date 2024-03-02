@@ -14,5 +14,34 @@ public class EmployeeClient {
 //        Legal secretaries know how to prepare legal documents.
 
         // do stuff using the Employee (and child classes) here...
+        Employee Fred = new Employee(8);
+        Secretary Joe = new Secretary();
+        Lawyer Lisa = new Lawyer(20);
+        Marketer Max = new Marketer(10);
+        LegalSecretary Lois = new LegalSecretary();
+
+        System.out.println("Fred vacation: " + Fred.getVacationDays());
+        System.out.println("Joe vacation: " + Joe.getVacationDays());
+        System.out.println("Lisa vacation: " + Lisa.getVacationDays());
+        System.out.println("Max vacation: " + Max.getVacationDays());
+        System.out.println("Lois vacation: " + Lois.getVacationDays());
+
+        System.out.println("Fred vacation form: " + Fred.getVacationForm());
+        System.out.println("Joe vacation form: " + Joe.getVacationForm());
+        System.out.println("Lisa vacation form: " + Lisa.getVacationForm());
+        System.out.println("Max vacation form: " + Max.getVacationForm());
+        System.out.println("Lois vacation form: " + Lois.getVacationForm());
+
+        System.out.println("Fred salary: " + Fred.getSalary());
+        System.out.println("Joe salary: " + Joe.getSalary());
+        System.out.println("Lisa salary: " + Lisa.getSalary());
+        System.out.println("Max salary: " + Max.getSalary());
+        System.out.println("Lois salary: " + Lois.getSalary());
+
+        Joe.takeDictation("memo");
+        Lisa.sue();
+        Max.advertise();
+        Lois.takeDictation("legal memo");
+        Lois.fileLegalBriefs();
     }
 }
